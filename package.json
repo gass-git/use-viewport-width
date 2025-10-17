@@ -23,6 +23,9 @@
   "license": "ISC",
   "author": "gass-git",
   "type": "module",
-  "main": "index.js",
-  "scripts": {}
+  "main": "index.ts",
+  "scripts": {},
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
 }
