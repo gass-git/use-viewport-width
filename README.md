@@ -3,15 +3,7 @@
 ```
 npm i use-viewport-width
 ```
-
-<<<<<<< HEAD
 ## Parameter
-=======
-## Parameters
-<<<<<<< HEAD
-=======
->>>>>>> 96126f2 (feat: adds the hook logic)
->>>>>>> 1183791050011e0768e4c8ebaf682b85b6165101
 
 | Name        | Type     | Description |
 |------------|---------|---------|
