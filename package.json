@@ -1,0 +1,28 @@
+{
+  "name": "use-viewport-width",
+  "version": "1.0.0",
+  "description": "React hook that returns pixel values for viewport width percentages, updating on resize.",
+  "keywords": [
+    "react",
+    "hook",
+    "viewport",
+    "vw",
+    "responsive",
+    "width",
+    "resize",
+    "pixels"
+  ],
+  "homepage": "https://github.com/gass-git/use-viewport-width#readme",
+  "bugs": {
+    "url": "https://github.com/gass-git/use-viewport-width/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gass-git/use-viewport-width.git"
+  },
+  "license": "ISC",
+  "author": "gass-git",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {}
+}
