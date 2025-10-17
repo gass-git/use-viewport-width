@@ -26,7 +26,10 @@
   "main": "index.ts",
   "scripts": {},
   "devDependencies": {
+    "@rollup/plugin-typescript": "^12.1.4",
     "rollup": "^4.52.4",
+    "rollup-plugin-dts": "^6.2.3",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
     "typescript": "^5.9.3"
   },
   "peerDependencies": {
