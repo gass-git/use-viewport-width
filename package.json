@@ -27,6 +27,8 @@
   "scripts": {},
   "devDependencies": {
     "@rollup/plugin-typescript": "^12.1.4",
+    "@types/react": "^19.2.2",
+    "react": "^19.2.0",
     "rollup": "^4.52.4",
     "rollup-plugin-dts": "^6.2.3",
     "rollup-plugin-peer-deps-external": "^2.2.4",
