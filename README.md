@@ -4,17 +4,11 @@
 npm i use-viewport-width
 ```
 
-## Parameters
-
-```
-const { width } = useVw(percentage)
-
-```
+## Parameter
 
 | Name        | Type     | Description |
-|------------|---------|---------|-------------|
+|------------|---------|---------|
 | `percentage` | `number` | The percentage of the viewport width to calculate. The hook returns this percentage of the current viewport width in **pixels**. For example, `50` will return 50% of the viewport width. |
-
 
 ## Usage
 
