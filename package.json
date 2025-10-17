@@ -27,5 +27,9 @@
   "scripts": {},
   "devDependencies": {
     "typescript": "^5.9.3"
+  },
+  "peerDependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
   }
 }
