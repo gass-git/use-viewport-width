@@ -26,6 +26,7 @@
   "main": "index.ts",
   "scripts": {},
   "devDependencies": {
+    "rollup": "^4.52.4",
     "typescript": "^5.9.3"
   },
   "peerDependencies": {
