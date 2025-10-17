@@ -1,15 +1,20 @@
 import { useEffect, useState } from 'react'
 
 export default function useViewportWidth(percentage: number): number {
-  const [width, setWidth] = useState(window.innerWidth)
+  const [width, setWidth] = useState(
+    // guard window for SSR (server-side rendering)
+    typeof window !== "undefined" ? window.innerWidth : 0
+  )
 
-  function updateWidth(): void{
+  function updateWidth(_event?: UIEvent): void{
     setWidth(window.innerWidth)
   }
 
-  useEffect(() => {
-    document.addEventListener('resize', updateWidth)
-    return () => document.removeEventListener('resize', updateWidth)
+  useEffect((): (() => void) => {
+    window.addEventListener('resize', updateWidth)
+
+    // cleanup: remove event listener when hook unmounts
+    return () => window.removeEventListener('resize', updateWidth)
   }, [])
 
   return width * percentage/100
