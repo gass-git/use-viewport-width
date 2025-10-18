@@ -17,5 +17,5 @@ export default function useViewportWidth(percentage: number): number {
     return () => window.removeEventListener('resize', updateWidth)
   }, [])
 
-  return width * percentage/100
+  return (width * percentage) / 100
 }
