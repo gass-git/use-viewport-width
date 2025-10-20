@@ -26,7 +26,7 @@ function Box() {
   const w = useVW(50) // 50% of viewport width
 
   return (
-    <div style={{ width: `${w}px`, background: "lightblue", height: "100px" }}>
+    <div style={{ width: `${w}px`, background: "blue", height: "100px" }}>
       responsive box - width: {w}px
     </div>
   )
