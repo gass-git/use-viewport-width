@@ -12,18 +12,18 @@ npm i use-viewport-width
 ## Usage
 
 ```typescript
-import useVw from 'use-viewport-width'
+import useVW from 'use-viewport-width'
 
-const w = useVw(100) // 100% of the viewport width in pixels
+const w = useVW(100) // 100% of the viewport width in pixels
 ```
 
 ## Example
 
 ```typescript
-import useVw from "use-viewport-width"
+import useVW from "use-viewport-width"
 
 function Box() {
-  const w = useVw(50) // 50% of viewport width
+  const w = useVW(50) // 50% of viewport width
 
   return (
     <div style={{ width: `${w}px`, background: "lightblue", height: "100px" }}>

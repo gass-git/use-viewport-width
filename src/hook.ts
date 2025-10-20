@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-export default function useViewportWidth(percentage: number): number {
+export default function useVW(percentage: number): number {
   const [width, setWidth] = useState(
     // guard window for SSR (server-side rendering)
     typeof window !== "undefined" ? window.innerWidth : 0
