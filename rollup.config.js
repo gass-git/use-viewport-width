@@ -1,6 +1,7 @@
 import PeerDepsExternal from "rollup-plugin-peer-deps-external";
 import typescript from "@rollup/plugin-typescript";
 import { dts } from "rollup-plugin-dts"
+import terser from "@rollup/plugin-terser";
 
 const PJ = require("./package.json")
 
@@ -10,7 +11,8 @@ export default [
     output: [{ file: PJ.module, format: "esm" }],
     plugins: [
       PeerDepsExternal(),
-      typescript({ tsconfig: "./tsconfig.json", declaration: false })
+      typescript({ tsconfig: "./tsconfig.json", declaration: false }),
+      terser()
     ],
     external: ["react", "react-dom"],
   },
