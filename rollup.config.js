@@ -3,12 +3,10 @@ import typescript from "@rollup/plugin-typescript";
 import { dts } from "rollup-plugin-dts"
 import terser from "@rollup/plugin-terser";
 
-const PJ = require("./package.json")
-
 export default [
   {
     input: "src/hook.ts",
-    output: [{ file: PJ.module, format: "esm" }],
+    output: [{ file: "dist/index.js" }],
     plugins: [
       PeerDepsExternal(),
       typescript({ tsconfig: "./tsconfig.json", declaration: false }),
@@ -18,7 +16,7 @@ export default [
   },
   {
     input: "dist/hook.d.ts",
-    output: [{file: "dist/index.d.ts", format: "esm"}],
+    output: [{file: "dist/index.d.ts"}],
     plugins: [dts()]
   }
 ]
