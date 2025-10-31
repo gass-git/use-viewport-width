@@ -12,7 +12,7 @@ export default [
       typescript({ tsconfig: "./tsconfig.json", declaration: false }),
       terser()
     ],
-    external: ["react", "react-dom"],
+    external: ["react"],
   },
   {
     input: "dist/hook.d.ts",
