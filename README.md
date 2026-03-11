@@ -1,3 +1,10 @@
+# 📏 use-viewport-width
+[![Downloads](https://img.shields.io/npm/dm/use-viewport-width.svg?style=flat-square)](https://www.npmjs.com/package/use-viewport-width)
+[![version](https://img.shields.io/npm/v/use-viewport-width.svg?style=flat-square)](https://www.npmjs.com/package/use-viewport-width)
+[![MIT License](https://img.shields.io/npm/l/use-viewport-width.svg?style=flat-square)](https://github.com/alvinometric/use-viewport-width/blob/main/LICENSE)
+
+React hook that returns a pixel value for a given percentage of the viewport width, updating automatically on resize for responsive layouts.
+
 ## Install with NPM
 
 ```
@@ -14,7 +21,7 @@ npm i use-viewport-width
 ```typescript
 import useVW from 'use-viewport-width'
 
-const w = useVW(100) // 100% of the viewport width in pixels
+const w = useVW(100); // 100% of the viewport width in pixels
 ```
 
 ## Example
@@ -23,7 +30,7 @@ const w = useVW(100) // 100% of the viewport width in pixels
 import useVW from "use-viewport-width"
 
 function Box() {
-  const w = useVW(50) // 50% of viewport width
+  const w = useVW(50); // 50% of viewport width
 
   return (
     <div style={{ width: `${w}px`, background: "blue", height: "100px" }}>
