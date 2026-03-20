@@ -1,7 +1,6 @@
 # 📏 use-viewport-width
 [![Downloads](https://img.shields.io/npm/dm/use-viewport-width.svg?style=flat-square)](https://www.npmjs.com/package/use-viewport-width)
 [![version](https://img.shields.io/npm/v/use-viewport-width.svg?style=flat-square)](https://www.npmjs.com/package/use-viewport-width)
-[![MIT License](https://img.shields.io/npm/l/use-viewport-width.svg?style=flat-square)](https://github.com/alvinometric/use-viewport-width/blob/main/LICENSE)
 
 React hook that returns a pixel value for a given percentage of the viewport width, updating automatically on resize for responsive layouts.
 
