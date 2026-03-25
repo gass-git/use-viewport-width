@@ -1,6 +1,6 @@
 {
   "name": "use-viewport-width",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "React hook that returns pixel values for viewport width percentages, updating on resize.",
   "keywords": [
     "react",
@@ -23,8 +23,12 @@
   "license": "ISC",
   "author": "gass-git",
   "type": "module",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    }
+  },
   "scripts": {
     "build": "tsc --emitDeclarationOnly --outDir dist/ && rollup -c --bundleConfigAsCjs && rimraf dist/hook.d.ts"
   },
